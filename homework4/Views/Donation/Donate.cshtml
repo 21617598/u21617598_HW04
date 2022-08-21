@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Donate";
+}
+
+<head>
+    <style>
+        body {
+            background-image: url(/media/oceanpic.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h2 {
+            color: black;
+            font-family: 'Bookman Old Style';
+        }
+
+        h3 {
+            color: darkblue;
+            font-family: Constantia;
+        }
+
+        p {
+            color: darkslategrey;
+            font-family: Constantia;
+            font-size:17px;
+        }
+    </style>
+</head>
+
+<body>
+   <div style="border:solid; border-color:darkslategrey; background-color:lightblue;">
+    <h2>Donate</h2>
+
+    <p>
+        There is more than one way of helping the Greenpeace organization reach its objectives and bring about change.
+        You can donate towards the greenpeace causes and help us get a step closer to making the goals of the organization achievable.
+    </p>
+       </div>
+    <hr />
+
+    <form action="~/media/sign-ups/">
+        <div class="container" style="border:groove;border-color:bisque; background-color:burlywood;">
+            <h1>Donation form</h1>
+            <p style="font-size:18px;">Please fill in this form.</p>
+            <hr>
+
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Enter name" name="name" required>
+            <br />
+            <br />
+
+            <label for="surname"><b>Surname:</b></label>
+            <input type="text" placeholder="Enter surname" name="surname" required>
+            <br />
+            <br />
+
+            <label for="amount"><b>How much are you donating:</b></label>
+            <input type="number" placeholder="Enter the amount" name="amount" required>
+            <hr />
+
+            
+            <div class="clearfix">
+                <button type="button" class="btn cancelbtn">Cancel</button>
+                <button type="submit" onclick="countfunction" class="btn" id="donate">Donate</button>
+            </div>
+        </div>
+    </form>
+    <hr />
+
+    <div style="border:solid; border-color:darkslategrey; background-color:lightblue;">
+        <h3 id="Sum"></h3>
+        <p>
+            Greenpeace as an organization, as a community are very grateful and appreciative of any support we receive.
+            We love the growth of our community and the involvement that comes with that growth.
+
+            If you can't donate, it's no train smash!
+            You can still help, by signing petitions that Greenpeace is running.
+
+            <ul>
+               <li><a href="https://www.greenpeace.org/africa/en/act/vuma-earth-stop-shells-seismic-testing-off-the-coast-of-sa/">Petition against shell seismic testing off the coast of South Africa</a></li> 
+               <li><a href="https://engage.us.greenpeace.org/6-YhFpwE3Uabcls1_nS8tA2?utm_source=website&utm_medium=actioncard&sourceid=1012578&_ga=2.23072061.622247660.1661015342-1521373069.1660259830">Petition for Joe Biden to ban deep sea mining</a></li>
+               <li><a href="https://engage.us.greenpeace.org/XFnjSpLHQEKyZCWq2ks1bQ2?utm_source=instagram&utm_medium=post&utm_campaign=starbucks_reusables_report_ig&sourceid=1008358&_ga=2.54070703.622247660.1661015342-1521373069.1660259830">Petition for Starbucks to enforce reusable cups</a></li>
+            </ul>
+        </p>
+    </div>
+
+</body>
+@*javascript*@
+<script>
+    function countfunction() {
+        let count = 0;
+        count = count + count;
+        Document.getElementById("Sum").innerHTML= count.toString;
+    }
+
+</script>

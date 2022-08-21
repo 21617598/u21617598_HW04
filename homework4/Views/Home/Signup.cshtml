@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+}
+<head>
+    <style>
+        label{
+            font-family:Constantia;
+            font-size:15px;
+        }
+
+        body {
+            background-image:url(/media/joel-vodell-8Ogfqvw15Rg-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h2 {
+            color: darkcyan;
+            font-family: 'Bookman Old Style';
+            border-bottom:solid;
+            border-bottom-width:1px;
+            border-bottom-color:black;
+        }
+
+        h4 {
+            color: black;
+            font-family: Constantia;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>
+        SHOW THAT YOU SUPPORT THE CAUSE AND SIGN UP.
+    </h2>
+
+    <h4>
+        Our oceans need us now more than ever, and the more we are, the further we will get, and the better things will be in our world.
+        Whether it is spreading the word, learning more about our oceans, being more aware of what is going on or just following and showing Greenpeace your love and support - YOU ARE HOLDING OUR HAND IN THIS FIGHT.
+    </h4>
+
+    <br />
+  <form action="~/media/sign-ups/">
+      <div class="container" style="border:groove;border-color:bisque;">
+          <h1>Sign Up</h1>
+          <p style="font-size:18px;">Please fill in this form to be a part of us.</p>
+          <hr>
+
+          <label for="name"><b>Name:</b></label>
+          <input type="text" placeholder="Enter name" name="name" required>
+          <br />
+          <br />
+
+          <label for="surname"><b>Surname:</b></label>
+          <input type="text" placeholder="Enter surname" name="surname" required>
+          <br />
+          <br />
+
+          <label for="email"><b>Email:</b></label>
+          <input type="text" placeholder="Enter email address" name="email" required>
+          <hr />
+
+          <label>
+              <input type="checkbox" checked="checked" name="emailpermission" style="margin-bottom:15px">
+              Tick if you would not mind receiving emails, newsletters and information sent to you (you may unsubscribe at any point.)
+          </label>
+          <br />
+
+          <div class="clearfix">
+              <button type="button" class="btn cancelbtn" >Cancel</button>
+              <button type="submit" class="btn signupbtn">Sign Up</button>
+          </div>
+      </div>
+ </form>
+
+</body>

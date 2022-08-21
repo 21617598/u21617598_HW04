@@ -1,0 +1,340 @@
+﻿@using homework4.Models
+@model List<volunteer>
+@{
+    ViewBag.Title = "Volunteer";
+}
+
+<head>
+    <style>
+        body {
+            background-image: url(/media/francesco-ungaro-nlqqldluDBw-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h2 {
+            color: coral;
+            font-family: 'Bookman Old Style';
+        }
+
+        h3 {
+            color: lightsalmon;
+            font-family: Constantia;
+        }
+
+        img {
+            height: 100px;
+            width: 180px;
+        }
+
+        th {
+            font-size: 25px;
+            font-family: Constantia;
+            text-transform: capitalize;
+        }
+
+        td {
+            font-size: 18px;
+        }
+
+        table {
+            background-color: lightgray;
+            border-bottom: solid;
+            border-bottom-color: lightcyan;
+            border-top-color: lightcyan;
+            border-top-style: solid;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="border-bottom:solid; border-bottom-color:aquamarine;">
+        <h2> WANT TO GIVE A HELPING HAND?</h2>
+
+        <h3>
+            You can take action and contribute to the safekeeping, and restoration of our oceans.
+            You can play a part in ensuring the safety of glorious sea life that need our help in securing their survival for many years to come.
+            Making a difference comes in many different forms but they all start with caring.
+        </h3>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="~/media/volunteer pic 2.jpg" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/media/volunteer pic 3.jpg" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/media/volunteer pic 4.jpg" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/media/volunteer pic 5.jpg" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/media/volunteer pic 2.jpg" />
+            </div>
+            <div class="col-sm-2">
+                <img src="~/media/volunteer pic 3.jpg" />
+            </div>
+
+        </div>
+        <br />
+        <h2 style="color:black;">THE GREENPEACE NETWORK: </h2>
+        <br />
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Greenpeace organization</th>
+                        <th>Country</th>
+                        <th>Address</th>
+                        <th>Contact details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Greenpeace International</td>
+                        <td>The Netherlands</td>
+                        <td>1058 GV Amsterdam, Surinameplain 118</td>
+                        <td>
+                            Tel: +31 20 718 2000
+                            Fax: +31 20 718 2002
+                            Email: info.int@greenpeace.org
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace Africa </td>
+                        <td>South Africa</td>
+                        <td>Johannesburg, Ferndale, Randburg, 29 Kent Avenue</td>
+                        <td>
+                            Fundraising Support
+                            Tel: +27 11 726 24
+                            Email: fgpa@greenpeace.org
+
+                            Engagement Support
+                            Tel: +27 11 482 4696
+                            Email: coafrica@greenpeace.org
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace Africa </td>
+                        <td>Senegal</td>
+                        <td>
+                            N° 7602 Mermoz
+                            Dakar, Senegal
+                        </td>
+                        <td>N/A </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace Africa </td>
+                        <td>Democratic Republic of Congo</td>
+                        <td>
+                            9 Avenue du Port, Immeuble PLM 1,
+                            Quartier La Révolution, Commune de la Gombe,
+                            Kinshasa, République Démocratique du Congo
+                        </td>
+                        <td>N/A </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace Africa </td>
+                        <td>Kenya</td>
+                        <td>
+                            6 Kanjata Road
+                            (formerly Muthangari) off James Gichuru Road,
+                            Lavington,
+                            Nairobi, Kenya
+                        </td>
+                        <td>N/A </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace Africa </td>
+                        <td>Cameroon</td>
+                        <td>
+                            201 Rue 6.043 Ntougou Golf.
+                            Derrière La Foire. Yaoundé II.
+                            Yaoundé Cameroon
+                        </td>
+                        <td>N/A </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace UK </td>
+                        <td>United Kingdom</td>
+                        <td>
+                            Canonbury Villas
+                            London N1 2PN
+                        </td>
+                        <td>
+                            Tel: +44 207 865 8100
+                            Fax: +44 207 865 8200
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace USA </td>
+                        <td>United States of America</td>
+                        <td>
+                            702 H Street, NW, Suite 300
+                            Washington, DC 20001
+                        </td>
+                        <td>
+                            Tel: +1 202 462 1177
+                            Fax: +1 202 462 4507
+                            Email: connect@greenpeace.us
+                            Volunteer: www.greenpeace.org/volunteer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace USA </td>
+                        <td>United States of America</td>
+                        <td>
+                            1242 Market Street, 2nd Floor
+                            San Francisco, CA 94102
+                        </td>
+                        <td>
+                            Tel: +1 415 255 9221
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace East Asia </td>
+                        <td>China</td>
+                        <td>
+                            Liangdian Creatie Park Room 201,
+                            Dongsishitiao 94,
+                            Dongcheng District,
+                            Beijing, China 100007
+                        </td>
+                        <td>
+                            Tel : +86 (0)10 6554 6931
+                            Fax : +86 (0)10 6408 7910
+                            Email: greenpeace.cn@greenpeace.org
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace East Asia </td>
+                        <td>Hong Kong</td>
+                        <td>
+                            10/F, Stelux House,
+                            698 Prince Edward Road East,
+                            San Po Kong, Kowloon
+                        </td>
+                        <td>
+                            Tel: +852 2854 8300
+                            Fax: +852 2745 2426
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace East Asia </td>
+                        <td>Japan</td>
+                        <td>
+                            N.F BLDG. 2F, 8-13-11,
+                            Nishishinjuku, Shinjuku – Ku,
+                            Tokyo 160-0023
+                        </td>
+                        <td>
+                            Tel: +81 3 5338 9800
+                            Fax: +81 3 5338 9817
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace East Asia </td>
+                        <td>South Korea</td>
+                        <td>
+                            6F Cheongryong bldg,
+                            Hangang-daero 257,
+                            Yongsan-gu, Seoul (04322)
+                        </td>
+                        <td>
+                            Tel: +82 (0)2 3144 1994
+                            Fax: +82 (0)2 6455 1995
+                            Email: greenpeace.kr@greenpeace.org
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenpeace East Asia </td>
+                        <td>Taiwan</td>
+                        <td>
+                            No. 109, Sec. 1, Chongqing S. Rd.,
+                            Zhongzheng Dist.,
+                            Taipei City 100004
+                        </td>
+                        <td>
+                            Tel: +886 (2) 2361 2351
+                            Fax: +886 (2) 2361 2033
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <br />
+        <div class="row">
+
+            <div class="col-md-4">
+                <h2>Option Slection</h2>
+                @using (Html.BeginForm("Volunteer", "Volunteer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <div>
+                       
+                        <div>Image @Html.RadioButton("option", "image")</div>
+                        <div>Video @Html.RadioButton("option", "video")</div>
+
+                    </div>
+                    <br />
+                    <input type="file" name="file" />
+                    <br />
+                    <input type="submit" value="Submit" />
+                }
+
+
+            </div>
+
+           
+        </div>
+        <br />
+        <div class="row">
+            <div class="container" style="height: 600px; overflow: auto;">
+                @if (Model.Count > 0)
+                {
+                    <div class="row-fluid">
+                        <div class="span2">
+                            <div class="item">
+                                @foreach (volunteer file in Model)
+                                {
+                                    <div style=" margin:10px; float:left;">
+                                        <div class="gallery">
+                                            <a title="Photo" href="@Url.Content("~/media")@file.FileName">
+                                                <div class="zoom">
+                                                    <img src="@Url.Content("~/media")@file.FileName" class="imgBox" />
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div style="padding: 250px;">
+                                            @file.FileName
+                                        </div>
+                                        <div>
+                                            @Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName }, new { @class = "btn btn-success btn-sm" })
+                                            @Html.ActionLink("DELETE", "DeleteFile", new { fileName = file.FileName }, new { @class = "btn btn-danger btn-sm" })
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <script>
+                $(document).ready(function ($) {
+                    $(".gallery a").fancybox();
+                });
+            </script>
+        </div>
+    </div>
+
+
+</body>
+
+
