@@ -128,7 +128,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Animal.cs" />
-    <Compile Include="Models\CampaignProject.cs" />
     <Compile Include="Models\Seal.cs" />
     <Compile Include="Models\Shark.cs" />
     <Compile Include="Models\Turtle.cs" />

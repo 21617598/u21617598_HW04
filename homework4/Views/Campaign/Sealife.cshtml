@@ -151,14 +151,14 @@
     }
 
 
-    @*@foreach (var animal in Model)
+    @foreach (var animal in Model)
     {
 
         <h4>@animal.Type</h4>
 
         <p> @Html.Raw(animal.getDetails())</p>
         <p> @Html.Raw(animal.getFact())</p>
-    }*@
+    }
 </div>
 <hr />
 <div class="container">
